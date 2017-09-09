@@ -1,0 +1,27 @@
+{
+  "name": "bulma-quickview",
+  "version": "0.0.1",
+  "description": "Display a quick view of data without leaving the current page",
+  "main": "quickview.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wikiki/bulma-quickview.git"
+  },
+  "keywords": [
+    "Bulma",
+    "bulma",
+    "bulma.io",
+    "Bulma.io",
+    "extension",
+    "quickview"
+  ],
+  "author": "Wikiki <wikiki@protonmail.com> (https://wikiki.github.io/bulma-extensions/overview)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Wikiki/bulma-quickview/issues"
+  },
+  "homepage": "https://github.com/Wikiki/bulma-quickview#readme"
+}
