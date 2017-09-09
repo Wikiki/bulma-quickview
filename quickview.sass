@@ -1,0 +1,50 @@
+$quickview-shadow: 5px 0px 13px 3px rgba( 0, 0, 0, 0.1 ) !default
+$quickview-divider: 1px solid $grey-lighter !default
+
+.quickview
+  display: flex
+  flex-direction: column
+  background-color: $white
+  width: 20%
+  max-width: calc( 100% - 50px )
+  position: fixed
+  top: 0
+  bottom: 0
+  right: -20%
+  z-index: 999
+  transform: translateZ( 0 )
+  transition: .3s ease
+  backface-visibility: hidden
+  perspective: 1000
+  will-change: transform
+
+  &.is-active
+    right: 0
+    box-shadow: $quickview-shadow
+
+.quickview-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 0 1rem
+  min-height: 64px !important
+  border-bottom: $quickview-divider
+  .title
+    font-size: $size-6
+    font-weight: $weight-light
+    margin-bottom: 0
+
+.quickview-body
+  -webkit-box-flex: 1
+  flex: 1 1 0%
+
+.quickview-footer
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 0 1rem
+  min-height: 4rem
+  background-color: $white-ter
+  border-top: $quickview-divider
+  > *
+    margin: 0 .4rem
