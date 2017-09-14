@@ -5,22 +5,47 @@ $quickview-divider: 1px solid $grey-lighter !default
   display: flex
   flex-direction: column
   background-color: $white
-  width: 20%
   max-width: calc( 100% - 50px )
   position: fixed
   top: 0
   bottom: 0
-  right: -20%
   z-index: 999
   transform: translateZ( 0 )
   transition: .3s ease
   backface-visibility: hidden
   perspective: 1000
   will-change: transform
-
+  +mobile
+    width: 100%
+    right: -100%
+  +tablet
+    width: 50%
+    right: -50%
+  +desktop
+    width: 35%
+    right: -35%
+  +widescreen
+    width: 30%
+    right: -30%
+  +fullhd
+    width: 25%
+    right: -25%
+  &.is-left
+    +mobile
+      left: -100%
+    +tablet
+      left: -50%
+    +desktop
+      left: -35%
+    +widescreen
+      left: -30%
+    +fullhd
+      left: -25%
   &.is-active
     right: 0
     box-shadow: $quickview-shadow
+    &.is-left
+      left: 0
 
 .quickview-header
   display: flex
