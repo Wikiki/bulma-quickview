@@ -8,4 +8,4 @@ Bulma's extension to display quick view of data without leaving the current page
 
 Documentation & Demo
 ---
-You can find the Documentation and a demo [here](https://wikiki.github.io/bulma-extensions/quickview)
+You can find the Documentation and a demo [here](https://wikiki.github.io/components/quickview/)
