@@ -1,8 +1,8 @@
 {
   "name": "bulma-quickview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Display a quick view of data without leaving the current page",
-  "main": "quickview.js",
+  "main": "quickview.sass",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/Wikiki/bulma-quickview/issues"
   },
-  "homepage": "https://github.com/Wikiki/bulma-quickview#readme"
+  "homepage": "https://github.com/Wikiki/bulma-quickview#readme",
+  "devDependencies": {
+    "bulma": "^0.6.1"
+  },
+  "files": [
+    "quickview.sass",
+    "quickview.css",
+    "quickview.min.css",
+    "quickview.js",
+    "quickview.min.js",
+    "LICENSE",
+    "README.md"
+  ]
 }
