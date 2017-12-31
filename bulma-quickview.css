@@ -23,6 +23,10 @@
   will-change: transform;
 }
 
+.quickview.is-marginless {
+  max-width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .quickview {
     width: 100%;
@@ -102,7 +106,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
-  min-height: 64px !important;
+  min-height: 4rem !important;
   border-bottom: 1px solid #dbdbdb;
 }
 
@@ -110,6 +114,86 @@
   font-size: 1rem;
   font-weight: 300;
   margin-bottom: 0;
+}
+
+.quickview-header.is-white {
+  background-color: white;
+}
+
+.quickview-header.is-white .title {
+  color: #0a0a0a;
+}
+
+.quickview-header.is-black {
+  background-color: #0a0a0a;
+}
+
+.quickview-header.is-black .title {
+  color: white;
+}
+
+.quickview-header.is-light {
+  background-color: whitesmoke;
+}
+
+.quickview-header.is-light .title {
+  color: #363636;
+}
+
+.quickview-header.is-dark {
+  background-color: #363636;
+}
+
+.quickview-header.is-dark .title {
+  color: whitesmoke;
+}
+
+.quickview-header.is-primary {
+  background-color: #00d1b2;
+}
+
+.quickview-header.is-primary .title {
+  color: #fff;
+}
+
+.quickview-header.is-link {
+  background-color: #3273dc;
+}
+
+.quickview-header.is-link .title {
+  color: #fff;
+}
+
+.quickview-header.is-info {
+  background-color: #209cee;
+}
+
+.quickview-header.is-info .title {
+  color: #fff;
+}
+
+.quickview-header.is-success {
+  background-color: #23d160;
+}
+
+.quickview-header.is-success .title {
+  color: #fff;
+}
+
+.quickview-header.is-warning {
+  background-color: #ffdd57;
+}
+
+.quickview-header.is-warning .title {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.quickview-header.is-danger {
+  background-color: #ff3860;
+}
+
+.quickview-header.is-danger .title {
+  color: #fff;
 }
 
 .quickview-body {
