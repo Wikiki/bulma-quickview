@@ -1,5 +1,5 @@
 $quickview-z: 35 !default
-$quickview-header-height: 4rem !default
+$quickview-header-height: $navbar-height !default
 $quickview-footer-height: 4rem !default
 $quickview-shadow: 5px 0px 13px 3px rgba( 0, 0, 0, 0.1 ) !default
 $quickview-divider: 1px solid $grey-lighter !default
@@ -80,7 +80,7 @@ $quickview-divider: 1px solid $grey-lighter !default
 
 .quickview-footer
   display: flex
-  justify-content: center
+  justify-content: space-between
   align-items: center
   padding: 0 1rem
   min-height: $quickview-footer-height
