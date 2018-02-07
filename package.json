@@ -1,6 +1,6 @@
 {
   "name": "bulma-quickview",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Display a quick view of data without leaving the current page",
   "main": "quickview.sass",
   "scripts": {
@@ -24,15 +24,30 @@
     "url": "https://github.com/Wikiki/bulma-quickview/issues"
   },
   "homepage": "https://github.com/Wikiki/bulma-quickview#readme",
+  "scripts": {
+    "build": "gulp"
+  },
   "devDependencies": {
-    "bulma": "^0.6.1"
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-core": "^7.0.0-beta.3",
+    "bulma": "^0.6.2",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "run-sequence": "^2.2.1"
   },
   "files": [
-    "quickview.sass",
-    "bulma-quickview.css",
-    "bulma-quickview.min.css",
-    "quickview.js",
-    "quickview.min.js",
+    "dist/quickview.sass",
+    "dist/bulma-quickview.min.css",
+    "dist/quickview.js",
+    "dist/quickview.min.js",
     "LICENSE",
     "README.md"
   ]
