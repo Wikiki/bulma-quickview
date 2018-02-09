@@ -1,3 +1,19 @@
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/Wikiki/bulma-quickview/compare/v0.1.0...v0.1.6) (2018-02-09)
+
+
+### Bug Fixes
+
+* **bower:** Add missing version ([f4ed78a](https://github.com/Wikiki/bulma-quickview/commit/f4ed78a))
+
+
+### Features
+
+* **gulp:** Add gulp dependencies ([1f1c9e0](https://github.com/Wikiki/bulma-quickview/commit/1f1c9e0))
+* **gulp:** Add release task ([848b6fa](https://github.com/Wikiki/bulma-quickview/commit/848b6fa))
+
+
+
 # Change Log
 
 ## [Unreleased](https://github.com/wikiki/bulma-quickview/tree/HEAD)
