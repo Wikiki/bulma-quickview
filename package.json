@@ -2,7 +2,7 @@
   "name": "bulma-quickview",
   "version": "0.1.6",
   "description": "Display a quick view of data without leaving the current page",
-  "main": "quickview.sass",
+  "main": "dist/bulma-quickview.sass",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -49,10 +49,10 @@
     "run-sequence": "^2.2.1"
   },
   "files": [
-    "dist/quickview.sass",
+    "dist/bulma-quickview.sass",
     "dist/bulma-quickview.min.css",
-    "dist/quickview.js",
-    "dist/quickview.min.js",
+    "dist/bulma-quickview.js",
+    "dist/bulma-quickview.min.js",
     "LICENSE",
     "README.md"
   ]
