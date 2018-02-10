@@ -1,3 +1,8 @@
+<a name="0.1.9"></a>
+## [0.1.9](https://github.com/Wikiki/bulma-quickview/compare/0.1.8...0.1.9) (2018-02-10)
+
+
+
 <a name="0.1.8"></a>
 ## [0.1.8](https://github.com/Wikiki/bulma-quickview/compare/0.1.7...0.1.8) (2018-02-10)
 
