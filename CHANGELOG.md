@@ -1,3 +1,13 @@
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/Wikiki/bulma-quickview/compare/0.1.7...0.1.8) (2018-02-10)
+
+
+### Bug Fixes
+
+* **gulp:** Use UMD modules style ([8ba9964](https://github.com/Wikiki/bulma-quickview/commit/8ba9964))
+
+
+
 <a name="0.1.7"></a>
 ## [0.1.7](https://github.com/Wikiki/bulma-quickview/compare/0.1.6...0.1.7) (2018-02-10)
 
