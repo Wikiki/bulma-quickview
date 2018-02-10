@@ -1,3 +1,13 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/Wikiki/bulma-quickview/compare/0.1.9...1.0.0) (2018-02-10)
+
+
+### Features
+
+* **rollup:** Add Rollup transpilation ([4c65db6](https://github.com/Wikiki/bulma-quickview/commit/4c65db6))
+
+
+
 <a name="0.1.9"></a>
 ## [0.1.9](https://github.com/Wikiki/bulma-quickview/compare/0.1.8...0.1.9) (2018-02-10)
 
