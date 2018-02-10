@@ -1,3 +1,6 @@
+(function () {
+'use strict';
+
 const MOUSE_EVENTS = ['click', 'touchstart'];
 
 function closest(el, selector) {
@@ -56,3 +59,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+}());
