@@ -1,3 +1,15 @@
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/Wikiki/bulma-quickview/compare/0.1.6...0.1.7) (2018-02-10)
+
+
+### Bug Fixes
+
+* **gulp:** Correct dist filenames ([f0cf1a6](https://github.com/Wikiki/bulma-quickview/commit/f0cf1a6))
+* **package:** Correct file paths ([c6ca741](https://github.com/Wikiki/bulma-quickview/commit/c6ca741))
+* **travis:** Remove configuration ([de5831d](https://github.com/Wikiki/bulma-quickview/commit/de5831d))
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/Wikiki/bulma-quickview/compare/v0.1.0...v0.1.6) (2018-02-09)
 
