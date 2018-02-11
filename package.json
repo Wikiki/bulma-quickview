@@ -1,6 +1,6 @@
 {
   "name": "bulma-quickview",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Display a quick view of data without leaving the current page",
   "main": "dist/bulma-quickview.sass",
   "scripts": {
