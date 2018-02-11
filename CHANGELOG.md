@@ -1,3 +1,56 @@
+<a name="1.0.0"></a>
+# [1.0.0](https://github.com/Wikiki/bulma-quickview/compare/0.1.9...1.0.0) (2018-02-10)
+
+
+### Features
+
+* **rollup:** Add Rollup transpilation ([4c65db6](https://github.com/Wikiki/bulma-quickview/commit/4c65db6))
+
+
+
+<a name="0.1.9"></a>
+## [0.1.9](https://github.com/Wikiki/bulma-quickview/compare/0.1.8...0.1.9) (2018-02-10)
+
+
+
+<a name="0.1.8"></a>
+## [0.1.8](https://github.com/Wikiki/bulma-quickview/compare/0.1.7...0.1.8) (2018-02-10)
+
+
+### Bug Fixes
+
+* **gulp:** Use UMD modules style ([8ba9964](https://github.com/Wikiki/bulma-quickview/commit/8ba9964))
+
+
+
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/Wikiki/bulma-quickview/compare/0.1.6...0.1.7) (2018-02-10)
+
+
+### Bug Fixes
+
+* **gulp:** Correct dist filenames ([f0cf1a6](https://github.com/Wikiki/bulma-quickview/commit/f0cf1a6))
+* **package:** Correct file paths ([c6ca741](https://github.com/Wikiki/bulma-quickview/commit/c6ca741))
+* **travis:** Remove configuration ([de5831d](https://github.com/Wikiki/bulma-quickview/commit/de5831d))
+
+
+
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/Wikiki/bulma-quickview/compare/v0.1.0...v0.1.6) (2018-02-09)
+
+
+### Bug Fixes
+
+* **bower:** Add missing version ([f4ed78a](https://github.com/Wikiki/bulma-quickview/commit/f4ed78a))
+
+
+### Features
+
+* **gulp:** Add gulp dependencies ([1f1c9e0](https://github.com/Wikiki/bulma-quickview/commit/1f1c9e0))
+* **gulp:** Add release task ([848b6fa](https://github.com/Wikiki/bulma-quickview/commit/848b6fa))
+
+
+
 # Change Log
 
 ## [Unreleased](https://github.com/wikiki/bulma-quickview/tree/HEAD)
