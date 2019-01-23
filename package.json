@@ -2,7 +2,7 @@
   "name": "bulma-quickview",
   "version": "2.0.0",
   "description": "Display a quick view of data without leaving the current page",
-  "main": "./dist/js/bulma-quickview.min.jss",
+  "main": "./dist/js/bulma-quickview.min.js",
   "style": "./dist/css/bulma-quickview.min.css",
   "scripts": {
     "build": "gulp",
