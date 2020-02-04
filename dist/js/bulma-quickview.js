@@ -94,8 +94,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-var onQuickviewShowClick = Symbol("onQuickviewShowClick");
-var onQuickviewDismissClick = Symbol("onQuickviewDismissClick");
+var onQuickviewShowClick = Symbol('onQuickviewShowClick');
+var onQuickviewDismissClick = Symbol('onQuickviewDismissClick');
 
 var bulmaQuickview = function (_EventEmitter) {
   _inherits(bulmaQuickview, _EventEmitter);
@@ -107,13 +107,13 @@ var bulmaQuickview = function (_EventEmitter) {
 
     var _this = _possibleConstructorReturn(this, (bulmaQuickview.__proto__ || Object.getPrototypeOf(bulmaQuickview)).call(this));
 
-    _this.element = typeof selector === "string" ? document.querySelector(selector) : selector;
+    _this.element = typeof selector === 'string' ? document.querySelector(selector) : selector;
     // An invalid selector or non-DOM node has been provided.
     if (!_this.element) {
-      throw new Error("An invalid selector or non-DOM node has been provided.");
+      throw new Error('An invalid selector or non-DOM node has been provided.');
     }
 
-    _this._clickEvents = ["click"];
+    _this._clickEvents = ['click'];
     /// Set default options and merge with instance defined
     _this.options = _extends({}, __WEBPACK_IMPORTED_MODULE_1__defaultOptions__["a" /* default */], options);
 
@@ -132,7 +132,7 @@ var bulmaQuickview = function (_EventEmitter) {
 
 
   _createClass(bulmaQuickview, [{
-    key: "init",
+    key: 'init',
 
 
     /**
@@ -141,12 +141,12 @@ var bulmaQuickview = function (_EventEmitter) {
      * @return {void}
      */
     value: function init() {
-      this.quickview = document.getElementById(this.element.dataset["target"]);
+      this.quickview = document.getElementById(this.element.dataset['target']);
       this.dismissElements = document.querySelectorAll('[data-dismiss="quickview"]');
 
       this._bindEvents();
 
-      this.emit("quickview:ready", {
+      this.emit('quickview:ready', {
         element: this.element,
         quickview: this.quickview
       });
@@ -159,7 +159,7 @@ var bulmaQuickview = function (_EventEmitter) {
      */
 
   }, {
-    key: "_bindEvents",
+    key: '_bindEvents',
     value: function _bindEvents() {
       var _this2 = this;
 
@@ -176,9 +176,9 @@ var bulmaQuickview = function (_EventEmitter) {
   }, {
     key: onQuickviewShowClick,
     value: function value(e) {
-      this.quickview.classList.toggle("is-active");
-      this.quickview.classList.contains("is-active") ? e.target.innerText = "Hide quickview" : e.target.innerText = "Show quickview";
-      this.emit("quickview:toggle", {
+      this.quickview.classList.toggle('is-active');
+      this.quickview.classList.contains('is-active') ? e.target.innerText = 'Hide quickview' : e.target.innerText = 'Show quickview';
+      this.emit('quickview:toggle', {
         element: this.element,
         quickview: this.quickview
       });
@@ -186,15 +186,15 @@ var bulmaQuickview = function (_EventEmitter) {
   }, {
     key: onQuickviewDismissClick,
     value: function value(e) {
-      this.quickview.classList.remove("is-active");
+      this.quickview.classList.remove('is-active');
 
-      this.emit("quickview:hide", {
+      this.emit('quickview:hide', {
         element: this.element,
         quickview: this.quickview
       });
     }
   }], [{
-    key: "attach",
+    key: 'attach',
     value: function attach() {
       var selector = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '[data-show="quickview"]';
       var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
