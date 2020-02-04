@@ -1,26 +1,27 @@
-import EventEmitter from './events';
-import defaultOptions from './defaultOptions';
+import EventEmitter from "./events";
+import defaultOptions from "./defaultOptions";
 
-const onQuickviewShowClick = Symbol('onQuickviewShowClick');
-const onQuickviewDismissClick = Symbol('onQuickviewDismissClick');
+const onQuickviewShowClick = Symbol("onQuickviewShowClick");
+const onQuickviewDismissClick = Symbol("onQuickviewDismissClick");
 
 export default class bulmaQuickview extends EventEmitter {
   constructor(selector, options = {}) {
     super();
 
-    this.element = typeof selector === 'string'
-      ? document.querySelector(selector)
-      : selector;
+    this.element =
+      typeof selector === "string"
+        ? document.querySelector(selector)
+        : selector;
     // An invalid selector or non-DOM node has been provided.
     if (!this.element) {
-      throw new Error('An invalid selector or non-DOM node has been provided.');
+      throw new Error("An invalid selector or non-DOM node has been provided.");
     }
 
-    this._clickEvents = ['click'];
+    this._clickEvents = ["click"];
     /// Set default options and merge with instance defined
     this.options = {
       ...defaultOptions,
-      ...options
+      ...options,
     };
 
     this[onQuickviewShowClick] = this[onQuickviewShowClick].bind(this);
@@ -38,7 +39,7 @@ export default class bulmaQuickview extends EventEmitter {
     let instances = new Array();
 
     const elements = document.querySelectorAll(selector);
-    [].forEach.call(elements, element => {
+    [].forEach.call(elements, (element) => {
       setTimeout(() => {
         instances.push(new bulmaQuickview(element, options));
       }, 100);
@@ -52,14 +53,16 @@ export default class bulmaQuickview extends EventEmitter {
    * @return {void}
    */
   init() {
-    this.quickview = document.getElementById(this.element.dataset['target']);
-    this.dismissElements = document.querySelectorAll('[data-dismiss="quickview"]');
+    this.quickview = document.getElementById(this.element.dataset["target"]);
+    this.dismissElements = document.querySelectorAll(
+      '[data-dismiss="quickview"]',
+    );
 
     this._bindEvents();
 
-    this.emit('quickview:ready', {
+    this.emit("quickview:ready", {
       element: this.element,
-      quickview: this.quickview
+      quickview: this.quickview,
     });
   }
 
@@ -69,32 +72,38 @@ export default class bulmaQuickview extends EventEmitter {
    * @return {void}
    */
   _bindEvents() {
-    this._clickEvents.forEach(event => {
+    this._clickEvents.forEach((event) => {
       this.element.addEventListener(event, this[onQuickviewShowClick], false);
     });
 
-    [].forEach.call(this.dismissElements, dismissElement => {
-      this._clickEvents.forEach(event => {
-        dismissElement.addEventListener(event, this[onQuickviewDismissClick], false);
+    [].forEach.call(this.dismissElements, (dismissElement) => {
+      this._clickEvents.forEach((event) => {
+        dismissElement.addEventListener(
+          event,
+          this[onQuickviewDismissClick],
+          false,
+        );
       });
     });
   }
 
   [onQuickviewShowClick](e) {
-    this.quickview.classList.add('is-active');
-
-    this.emit('quickview:show', {
+    this.quickview.classList.toggle("is-active");
+    this.quickview.classList.contains("is-active")
+      ? (e.target.innerText = "Hide quickview")
+      : (e.target.innerText = "Show quickview");
+    this.emit("quickview:toggle", {
       element: this.element,
-      quickview: this.quickview
+      quickview: this.quickview,
     });
   }
 
   [onQuickviewDismissClick](e) {
-    this.quickview.classList.remove('is-active');
+    this.quickview.classList.remove("is-active");
 
-    this.emit('quickview:hide', {
+    this.emit("quickview:hide", {
       element: this.element,
-      quickview: this.quickview
+      quickview: this.quickview,
     });
   }
 }
