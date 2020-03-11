@@ -30,7 +30,7 @@ export default class bulmaQuickview extends EventEmitter {
   }
 
   /**
-   * Initiate all DOM element containing carousel class
+   * Initiate all DOM element
    * @method
    * @return {Array} Array of all Carousel instances
    */
