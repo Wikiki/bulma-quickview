@@ -176,9 +176,9 @@ var bulmaQuickview = function (_EventEmitter) {
   }, {
     key: onQuickviewShowClick,
     value: function value(e) {
-      this.quickview.classList.add('is-active');
-
-      this.emit('quickview:show', {
+      this.quickview.classList.toggle('is-active');
+      this.quickview.classList.contains('is-active') ? e.target.innerText = 'Hide quickview' : e.target.innerText = 'Show quickview';
+      this.emit('quickview:toggle', {
         element: this.element,
         quickview: this.quickview
       });
