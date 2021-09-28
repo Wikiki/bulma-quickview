@@ -51,7 +51,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-nop": "0.0.3",
     "gulp-postcss": "^7.0.1",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.0",
     "jest": "^23.1.0",
     "regenerator-runtime": "^0.11.1",
